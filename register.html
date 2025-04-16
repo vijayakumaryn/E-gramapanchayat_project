@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E- gramapanchayat
+            Register Page</title>
+  <style>
+    body {
+      background-image: url('images/background6.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      background-color:none;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+font-family:Brush Script;
+
+      color:yellow;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+font-family:Times New Roman;
+      font-size: 25px;
+      color: #ffe4e7;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: Green;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+ <form action="register.php" method="POST">
+  <div class="container">
+    <h1 style="font-style:oblique;">Registration Form</h1>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="name" name="username" placeholder="Enter your desired username" pattern="[A-Za-z]+" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" required>
+      </div>
+      <div class="form-group">
+        <label for="aadhar">Aadhar Number</label>
+        <input type="text" id="aadhar" name="aadhar" placeholder="Enter your Aadhar number" pattern="[0-9]{12}" maxlength="12" required>
+      </div>
+      <div class="form-group">
+        <label for="state">State</label>
+        <input type="text" id="state" name="state" placeholder="Enter your state" pattern="[A-Za-z]+" required>
+      </div>
+      <div class="form-group">
+        <label for="town">Town</label>
+        <input type="text" id="town" name="town" placeholder="Enter your town" pattern="[A-Za-z]+" required>
+      </div>
+      <div class="form-group">
+        <label for="village">Village</label>
+        <input type="text" id="village" name="village" placeholder="Enter your village" pattern="[A-Za-z]+" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your desired password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+<p style="color:white;""text-align: center;">Already Have An Account?<a href="login.html">Login here</a></p>
+  </div>
+</body>
+</html>
